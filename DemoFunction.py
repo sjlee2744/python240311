@@ -7,3 +7,4 @@ def setValue(newValue):
 
 #호촐
 print(setValue(5))
+print(setValue(5))
