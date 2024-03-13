@@ -22,10 +22,11 @@ soup = BeautifulSoup(page, "html.parser")
 #attrs를 사용
 #print(soup.find_all("p", attrs={"class":"outer-text"}))
 
-#태그 내부의 문자열만 가지고 오기
+# 태그 내부의 문자열만 가지고 오기
 
-for tag in soup.find_all("p"):
-    title = tag.text.strip()
-    title = title.replace("\n", "")
-    print(title)
+# for tag in soup.find_all("p"):
+#     title = tag.text.strip()
+#     title = title.replace("\n", "")
+#     print(title)
 
+print(soup.find(id="first"))
